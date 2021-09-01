@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Play</title>
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="style.css" />
+  
+    <script src="https://kit.fontawesome.com/a71707a89a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="box">
+      <i class="fas fa-check-circle"></i>
+      <h1>
+        First to reach 100 points wins.<br/>
+        when you roll dice number get adds to your current score. you can hold (your score gets added to final score)<br>
+        and pass channce to second player but if you get 1, then you will lose all your current score and next player will get the turn.  
+      </h1>
+      <a class="close" onclick="pop()">Close Box</a>
+    </div>
+
+    <main>
+      <div class="btn center btn1" id="restartBtn">🔄 New game</div>
+      <img src="./dice-3.png" class="center dice" id="dice" />
+      <div class="btn center btn2" id="rollBtn">🎲 Roll dice</div>
+      <div class="btn center btn3" id="holdBtn">📥 Hold</div>
+      <div class="btn center btn4" id="rulesBtn">❓ Rules</div>
+      <section id="p1" class="active">
+        <h1>player 1</h1>
+        <p id="p1fs"></p>
+        <div>
+          <h2>current</h2>
+          <p id="p1cs"></p>
+        </div>
+      </section>
+      <section id="p2" class="">
+        <h1>player 2</h1>
+        <p id="p2fs"></p>
+        <div>
+          <h2>current</h2>
+          <p id="p2cs"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>
+<!-- 
+  Made By Aniket Singh :) 
+  Got Idea from udemy ¯\_(ツ)_/¯
+-->
