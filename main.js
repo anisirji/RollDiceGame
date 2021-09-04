@@ -67,7 +67,7 @@ function roll(){
 //hold btn
 function hold(){
     score[active] += currentScore;
-    if (score[active] >= 100) win();
+    if (score[active] >= 150) win();
     document.getElementById(`p${active+1}fs`).textContent = score[active];
     currentScore = 0;
     document.getElementById(`p${active+1}cs`).textContent = currentScore;
